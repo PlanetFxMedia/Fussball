@@ -64,7 +64,7 @@ public class PlayerListener implements Listener {
 			@Override
 			public void run() {
 				if (!HGAPI.getArenaManager().getArenas().isEmpty()) {
-					Arena arena = HGAPI.getArenaManager().getArena("IceHockey");
+					Arena arena = HGAPI.getArenaManager().getArena("Fussball");
 					if (HGAPI.getArenaManager().isRunning(arena)) {
 						p.kickPlayer("Auf diesem Server wird bereits gespielt!");
 					} else  {
@@ -83,9 +83,9 @@ public class PlayerListener implements Listener {
 						}
 						ScoreboardManager m = Bukkit.getScoreboardManager();
 						Scoreboard b = m.getNewScoreboard();
-						Objective o = b.registerNewObjective("IceHockey", "dummy");	
+						Objective o = b.registerNewObjective("Fussball", "dummy");	
 						int i = 6;
-						o.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&a&lIceHockey"));
+						o.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&a&lFussball"));
 						o.setDisplaySlot(DisplaySlot.SIDEBAR);
 						o.getScore(" ").setScore(i--);
 						o.getScore(ChatColor.translateAlternateColorCodes('&', "&4Rot &6" + arena.getFirstTeamScores() + ":" + arena.getSecondTeamScores() + " &2Grün")).setScore(i--);

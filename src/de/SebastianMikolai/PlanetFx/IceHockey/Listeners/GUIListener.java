@@ -67,7 +67,7 @@ public class GUIListener implements Listener {
 						player.closeInventory();
 					}
 				}
-			} else if ((ChatColor.DARK_AQUA + "[PlanetFxIceHockey]").equals(name)) {
+			} else if ((ChatColor.DARK_AQUA + "[PlanetFxFussball]").equals(name)) {
 				event.setCancelled(true);
 				if (Icons.getArenas().getItemMeta().getDisplayName().equals(clicked.getItemMeta().getDisplayName())) {
 					player.closeInventory();  

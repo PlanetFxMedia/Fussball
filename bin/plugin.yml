@@ -1,10 +1,10 @@
-name: PlanetFxIceHockey
+name: PlanetFxFussball
 version: 2.0
 author: Sebastian Mikolai
 
-main: de.SebastianMikolai.PlanetFx.IceHockey.HG
+main: de.SebastianMikolai.PlanetFx.Fussball.HG
 
 commands:
   hockey:
-    description: PlanetFxIceHockey Commands
-    usage: /hockey
+    description: PlanetFxFussball Commands
+    usage: /fb

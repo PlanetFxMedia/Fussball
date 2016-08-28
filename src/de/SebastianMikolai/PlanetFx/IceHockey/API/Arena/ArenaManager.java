@@ -39,7 +39,7 @@ public class ArenaManager{
 	}
 	
 	public void loadAllArenas() {
-		String path = "plugins/PlanetFxIceHockey/arenas";
+		String path = "plugins/PlanetFxFussball/arenas";
 		File folder = new File(path);
 		File[] listOfFiles = folder.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
@@ -55,9 +55,9 @@ public class ArenaManager{
   
 	public void LoadArena(String fn) {
 		try {
-			File f = new File("plugins/PlanetFxIceHockey/arenas/" + fn);
+			File f = new File("plugins/PlanetFxFussball/arenas/" + fn);
 			if (!f.exists()) {
-				HGAPI.getPlugin().getLogger().info("[PlanetFxIceHockey] plugins/PlanetFxIceHockey/arenas/" + fn + " not found; Creating one.");
+				HGAPI.getPlugin().getLogger().info("[PlanetFxFussball] plugins/PlanetFxFussball/arenas/" + fn + " not found; Creating one.");
 				return;
 			}
 			String name = fn.replace(".yml", "");
@@ -153,7 +153,7 @@ public class ArenaManager{
 			HGAPI.getPlugin().getLogger().info("Arena loaded " + an);
 			HGAPI.getArenaManager().addArena(arena);
 		} catch (Exception e) {
-			HGAPI.getPlugin().getLogger().warning("[PlanetFxIceHockey] Error while loading plugins/PlanetFxIceHockey/arenas/" + fn);
+			HGAPI.getPlugin().getLogger().warning("[PlanetFxIceHockey] Error while loading plugins/PlanetFxFussball/arenas/" + fn);
 			HGAPI.getPlugin().getLogger().warning("Error: " + e);
 			HGAPI.getPlugin().getLogger().warning("Full Error: ");
 			e.printStackTrace();
@@ -161,7 +161,7 @@ public class ArenaManager{
 	}
   
 	public void save(Arena arena) {
-		String fn = "plugins/PlanetFxIceHockey/arenas/" + arena.getName() + ".yml";
+		String fn = "plugins/PlanetFxFussball/arenas/" + arena.getName() + ".yml";
 		try {
 			File oldFile = new File(fn);
 			if (!oldFile.getParentFile().isDirectory()) {
@@ -199,7 +199,7 @@ public class ArenaManager{
 			pw.write(toWrite + "\r\n");      
 			pw.close();
 		} catch (Exception e) {
-			HGAPI.getPlugin().getLogger().warning("[PlanetFxIceHockey] Error while writing new " + fn);
+			HGAPI.getPlugin().getLogger().warning("[PlanetFxFussball] Error while writing new " + fn);
 			e.printStackTrace();
 		}
 	}

@@ -18,7 +18,7 @@ public class AngreiferSign implements SignType {
 	public void handleCreateSign(SignChangeEvent event) {
 		String className = event.getLine(1);
 		if (HGAPI.getClassManager().getClass(className) != null) {
-			event.setLine(0, ChatColor.DARK_RED + "[IceHockey]");
+			event.setLine(0, ChatColor.DARK_RED + "[Fussball]");
 			HGAPI.sendMessage(event.getPlayer(), ChatColor.translateAlternateColorCodes('&', HGAPI.getPlugin().getConfig().getString("Messages.success-sign-create")), false);
 			event.getBlock().getState().update(true);
 		} else {

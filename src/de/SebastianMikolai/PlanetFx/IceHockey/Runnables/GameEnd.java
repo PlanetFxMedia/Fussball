@@ -13,7 +13,7 @@ public class GameEnd implements Runnable {
 	private World world;
 	private int seconds;
 	private Location firework;
-	private static String prefix = ChatColor.DARK_GRAY + "[" + ChatColor.DARK_GREEN + "IceHockey" + ChatColor.DARK_GRAY + "] " + ChatColor.GOLD;
+	private static String prefix = ChatColor.DARK_GRAY + "[" + ChatColor.DARK_GREEN + "Fussball" + ChatColor.DARK_GRAY + "] " + ChatColor.GOLD;
 	
 	public GameEnd(World world, int seconds, Location firework) {
 		this.world = world;

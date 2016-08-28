@@ -93,7 +93,7 @@ public class Arena {
   	}
   	
   	public File getFile() {
-  		File file = new File("plugins/PlanetFxIceHockey/arenas/", this.name + ".yml");
+  		File file = new File("plugins/PlanetFxFussball/arenas/", this.name + ".yml");
   		return file;
   	}
   	

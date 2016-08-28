@@ -28,11 +28,11 @@ public class HG extends JavaPlugin {
 	
 	public void onEnable() {
 		saveDefaultConfig();
-		File teams = new File("plugins/PlanetFxIceHockey/teams/");
+		File teams = new File("plugins/PlanetFxFussball/teams/");
 		if (!teams.exists()) {
 			teams.mkdirs();
 		}
-		File arenas = new File("plugins/PlanetFxIceHockey/arenas/");
+		File arenas = new File("plugins/PlanetFxFussball/arenas/");
 		if (!arenas.exists()) {
 			arenas.mkdirs();
 		}
@@ -41,7 +41,7 @@ public class HG extends JavaPlugin {
 		Bukkit.getPluginManager().registerEvents(new SignListener(), this);
 		Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
 		Bukkit.getPluginManager().registerEvents(new GUIListener(), this);
-		getCommand("hockey").setExecutor(this.hockey);
+		getCommand("fb").setExecutor(this.hockey);
 	}
 	
 	public void onDisable() {

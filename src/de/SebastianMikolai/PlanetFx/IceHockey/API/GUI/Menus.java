@@ -13,7 +13,7 @@ import de.SebastianMikolai.PlanetFx.IceHockey.Commands.Icons;
 public class Menus {
 	
 	public static void openMainMenu(Player player) {
-		CustomGUIMenu menu = new CustomGUIMenu(ChatColor.DARK_AQUA + "[PlanetFxIceHockey]", 9);
+		CustomGUIMenu menu = new CustomGUIMenu(ChatColor.DARK_AQUA + "[PlanetFxFussball]", 9);
 		menu.addItem(Icons.getArenas(), 0);
 		if (HGAPI.getPlayerManager().getHockeyPlayer(player.getName()) != null) {
 			menu.addItem(Icons.getArenaLeave(ChatColor.translateAlternateColorCodes('&', HGAPI.getPlugin().getConfig().getString("Messages.icon-arena-leave"))), 1);

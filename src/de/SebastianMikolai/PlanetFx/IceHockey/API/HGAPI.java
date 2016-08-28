@@ -37,7 +37,7 @@ public class HGAPI {
 	private static PlayerManager players;
 	private static TeamManager teams;
 	private static List<Color> colors;
-	private static String prefix = ChatColor.DARK_GRAY + "[" + ChatColor.DARK_GREEN + "IceHockey" + ChatColor.DARK_GRAY + "] " + ChatColor.GOLD;
+	private static String prefix = ChatColor.DARK_GRAY + "[" + ChatColor.DARK_GREEN + "Fussball" + ChatColor.DARK_GRAY + "] " + ChatColor.GOLD;
 	
 	public HGAPI(HG _plugin) {
 		plugin = _plugin;

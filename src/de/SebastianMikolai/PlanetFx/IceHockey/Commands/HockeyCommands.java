@@ -15,7 +15,7 @@ public class HockeyCommands implements CommandExecutor {
 		if (sender instanceof Player) {
 			Player p = (Player)sender;
 			if (p.isOp()) {
-				if (cmd.getName().equalsIgnoreCase("hockey")) {
+				if (cmd.getName().equalsIgnoreCase("fb")) {
 					Menus.openMainMenu(p);
 				}
 			} else {

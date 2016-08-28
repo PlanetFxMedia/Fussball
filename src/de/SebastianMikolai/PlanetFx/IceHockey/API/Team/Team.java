@@ -27,7 +27,7 @@ public class Team {
 	}
 	
 	public File getFile() {
-		File file = new File("plugins/PlanetFxIceHockey/teams/", this.name + ".yml");
+		File file = new File("plugins/PlanetFxFussball/teams/", this.name + ".yml");
 		return file;
 	}
 	
