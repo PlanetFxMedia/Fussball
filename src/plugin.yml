@@ -5,6 +5,6 @@ author: Sebastian Mikolai
 main: de.SebastianMikolai.PlanetFx.Fussball.HG
 
 commands:
-  hockey:
+  fb:
     description: PlanetFxFussball Commands
     usage: /fb

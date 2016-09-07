@@ -86,7 +86,7 @@ public class PlayerListener implements Listener {
 						Scoreboard b = m.getNewScoreboard();
 						Objective o = b.registerNewObjective("Fussball", "dummy");	
 						int i = 6;
-						o.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&a&lFussball"));
+						o.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&a&lFußball"));
 						o.setDisplaySlot(DisplaySlot.SIDEBAR);
 						o.getScore(" ").setScore(i--);
 						o.getScore(ChatColor.translateAlternateColorCodes('&', "&4Rot &6" + arena.getFirstTeamScores() + ":" + arena.getSecondTeamScores() + " &2Grün")).setScore(i--);
